@@ -12,7 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Inherit Full VNS.
 $(call inherit-product, device/huawei/vns/full_vns.mk)
+
+# Inherit some common AOSP stuff.
+$(call inherit-product, vendor/aosp/common.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
@@ -20,5 +24,8 @@ TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_GMS_CLIENTID_BASE := android-huawei
 
-PRODUCT_NAME := lineage_vns
+PRODUCT_NAME := aosp_vns
 BOARD_VENDOR := Huawei
+
+# Build Magisk
+DEFAULT_ROOT_METHOD := magisk
