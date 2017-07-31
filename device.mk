@@ -145,9 +145,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     SnapdragonCamera
 
-# Doze
-PRODUCT_PACKAGES += \
-    HisiDoze
 
 # USB
 PRODUCT_PACKAGES += \
